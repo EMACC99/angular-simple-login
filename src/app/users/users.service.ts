@@ -21,5 +21,8 @@ export class UsersService {
         return this.http.get("", user);
         
     }
+    redirect(): Observable<any>{
+        return this.http.get("/login");
+    } 
     
 }

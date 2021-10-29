@@ -1,6 +1,24 @@
-<div class="register">
+<div class="body">  
+  <h1>Puto el que lo lea</h1>
+  Joder cuanto texto
+  <div class="register">
     <form class="custom-form" method="post">
       <h1>Register</h1>
+      <h3> Nombre</h3>
+      <input
+      type = "text"
+      [(ngModel)]="nombre"
+      placeholder="Nombre"
+      required="required"
+      >
+      <h3>Apellido</h3>
+      <input
+      type="text"
+      [(ngModel)]="apellido"
+      placeholder="Apelldio"
+      required="required"
+      >
+      <h3> Correo electronico </h3>
       <input
         type="email"
         [(ngModel)]="email"
@@ -8,20 +26,26 @@
         placeholder="Email"
         required="required"
       />
+      <h3> Numero telefonico </h3>
       <input
-        type="password"
-        [(ngModel)]="password"
-        name="password"
-        placeholder="Password"
+        type="string"
+        [(ngModel)]="numero"
+        name="Numero"
+        placeholder="+52 xxxxxxxxxx"
         required="required"
       />
+      <h3>Instagram</h3>
       <input
-        type="password"
-        [(ngModel)]="confirmPassword"
-        name="password"
-        placeholder="Repeat the password"
+        type="text"
+        [(ngModel)]="instagram"
+        name="Insta"
+        placeholder="@LaMerCosmeticos"
         required="required"
       />
       <button type="submit" (click)="register()">Register</button>
     </form>
   </div>
+</div>
+
+
+
