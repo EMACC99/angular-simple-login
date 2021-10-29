@@ -1,1 +1,142 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    background: #ecf0f3;
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ecf0f3;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #c9e6ce;
+  }
+
+
+  
+  .active {
+    background-color: #bcd8c1;
+  }
+  .custom-form {
+    min-width: 300px;
+    max-width: 60%;
+    margin: 0px auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 2rem 3rem;
+    margin: auto;
+    border-radius: 2.5rem;
+    background-color: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+    color: black;
+    margin-top: 10rem;
+  }
+  .custom-form input {
+    display: block;
+    margin: 2rem 0;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: none;
+    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8), inset 5px 5px 10px
+        rgba(0, 0, 0, 0.1);
+    border: 0 none;
+    background: #ebf5fc;
+  }
+  .custom-form button {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border: none;
+    font-size: 0.875rem;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #bcd8c1;
+    width: 100%;
+    display: block;
+    padding: 0.875rem 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    cursor: pointer;
+  }
+  .main-header {
+    display: grid;
+  }
+  .nav-item-1,
+  .nav-item-2,
+  .nav-item-3,
+  .nav-item-4,
+  .nav-item-5,
+  .nav-item-6,
+  .nav-item-7,
+  .nav-item-8,
+  .nav-item-9,
+  .nav-item-10,
+  .nav-item-11 {
+    display: none;
+  }
+  .main-nav {
+    /* some grid relevant styles */
+  }
+  .secondary-nav {
+    display: none;
+  }
+  .show-secondary .secondary-nav {
+    display: flex;
+  }
+  .secondary-nav .nav-item-1,
+  .secondary-nav .nav-item-2,
+  .secondary-nav .nav-item-3,
+  .secondary-nav .nav-item-4,
+  .secondary-nav .nav-item-5,
+  .secondary-nav .nav-item-6,
+  .secondary-nav .nav-item-7,
+  .secondary-nav .nav-item-8,
+  .secondary-nav .nav-item-9,
+  .secondary-nav .nav-item-10,
+  .secondary-nav .nav-item-11 {
+    display: flex;
+  }
+  @media (min-width: 800px) {
+    .nav-item-1,
+    .nav-item-2,
+    .nav-item-3,
+    .nav-item-4,
+    .nav-item-5 {
+      display: flex;
+    }
+    .main-nav {
+      /* some grid relevant styles */
+    }
+    .show-secondary .secondary-nav {
+      display: block;
+    }
+    .secondary-nav .nav-item-1,
+    .secondary-nav .nav-item-2,
+    .secondary-nav .nav-item-3,
+    .secondary-nav .nav-item-4,
+    .secondary-nav .nav-item-5 {
+      display: none;
+    }
+  }
+  
