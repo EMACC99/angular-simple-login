@@ -42,10 +42,11 @@
         placeholder="@LaMerCosmeticos"
         required="required"
       />
+      <h3>My Heroes</h3>
+      <ul class="estados">
+        <li *ngFor="let estado of estados"></li>
+      </ul>
       <button type="submit" (click)="register()">Register</button>
     </form>
   </div>
 </div>
-
-
-

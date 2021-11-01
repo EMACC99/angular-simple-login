@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from '../users/users.service';
 import { Router } from '@angular/router';
-import { estados } from '../estados';
+import { ESTADOS } from '../estados';
 @Component({
   selector: 'app-register-screen',
   templateUrl: './register-screen.component.html',
@@ -13,6 +13,7 @@ export class RegisterScreenComponent{
   instagram! : String;
   nombre! : String;
   apellido! : String;
+  estados = ESTADOS;
   constructor(public userService : UsersService, private router: Router) { }
 
   register(){
@@ -26,6 +27,3 @@ export class RegisterScreenComponent{
   }
 }
 
-// export class EstadosComponent implements OnInit{
-//   estados = estados;
-// }
