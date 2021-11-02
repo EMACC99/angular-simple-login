@@ -43,11 +43,11 @@
         required="required"
       />
       <h3>Estado</h3>
-      <ul class="estados">
-        <li *ngFor="let estado of estados">
-          <span class = 'badge'>{{estado}}</span>
-        </li>
-      </ul>
+      <select class="form"name="estado" id="estado" ngModel="data.singleSelect">
+        <option value="">---Please select---</option> <!-- not selected / blank option -->
+        <option [ngValue]="estado" *ngFor="let estado of estados">{{estado}}</option>
+      </select>
+      <br>
       <button type="submit" (click)="register()">Register</button>
     </form>
   </div>

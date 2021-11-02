@@ -7,14 +7,19 @@ import { ESTADOS } from '../estados';
   templateUrl: './register-screen.component.html',
   styleUrls: ['./register-screen.component.css']
 })
-export class RegisterScreenComponent{
+export class RegisterScreenComponent implements OnInit{
+
   email! : String;
   numero! :  String;
   instagram! : String;
   nombre! : String;
   apellido! : String;
   estados = ESTADOS;
+
   constructor(public userService : UsersService, private router: Router) { }
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
   register(){
     console.log(this.email);
