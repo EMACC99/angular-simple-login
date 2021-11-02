@@ -43,7 +43,7 @@
         required="required"
       />
       <h3>Estado</h3>
-      <select class="form"name="estado" id="estado" ngModel="data.singleSelect">
+      <select class="select"name="estado" id="estado" ngModel="data.singleSelect">
         <option value="">---Please select---</option> <!-- not selected / blank option -->
         <option [ngValue]="estado" *ngFor="let estado of estados">{{estado}}</option>
       </select>
