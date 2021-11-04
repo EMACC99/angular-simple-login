@@ -33,6 +33,14 @@
     background-color: #c9e6ce;
   }
   
+  .logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 6px;
+  }
+
   .active {
     background-color: #bcd8c1;
   }
