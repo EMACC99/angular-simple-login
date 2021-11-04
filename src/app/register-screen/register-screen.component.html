@@ -11,7 +11,7 @@
   <h1><p style="text-align:center">BT cosmetics es una marca líder en Australia, por nuestra llegada al mercado mexicano estamos regalando un cupon de 50% en todos los productos <br> Regístrate para obtenerlo </p></h1>
   <div class="register">
     <form class="custom-form" method="post">
-      <h1>Register</h1>
+      <h1>Registrate</h1>
       <h3> Nombre</h3>
       <input
       type = "text"
@@ -47,15 +47,22 @@
         placeholder="analuna@gmail.com"
         required="required"
       />
-      <h3>Contraseña</h3>
+      <h3>Instagram</h3>
       <input
         type="text"
         [(ngModel)]="instagram"
         name="Insta"
-        placeholder="*******"
+        placeholder="@BTCosmetics"
         required="required"
       />
-
+      <h3>Contraseña</h3>
+      <input
+      type="password"
+      [(ngModel)]="password"
+      name = "password"
+      placeholder="********"
+      required="required"
+      >
       <br>
       <button type="submit" (click)="register()">Register</button>
     </form>
