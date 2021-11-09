@@ -31,3 +31,5 @@ export const ESTADOS: String[] = [
     "Yucatán",
     "Zacatecas"
 ];
+
+export let contador = 0;

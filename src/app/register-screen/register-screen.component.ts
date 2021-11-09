@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UsersService } from '../users/users.service';
 import { Router } from '@angular/router';
 import { ESTADOS } from '../estados';
+import { contador } from '../estados';
 @Component({
   selector: 'app-register-screen',
   templateUrl: './register-screen.component.html',
@@ -27,10 +28,12 @@ export class RegisterScreenComponent implements OnInit{
   register(){
     console.log(this.email);
     console.log(this.numero);
-    const user = { email : this.email, password : this.numero};
-    this.userService.register(user).subscribe(data => {
-      console.log(data);
-    });
+    const user = { email : this.email, password : this.numero, nombre : this.nombre, apellido : this.apellido, numero : this.numero};
+    // this.userService.register(user).subscribe(data => {
+      // console.log(data);
+    // });
+    console.log(user);
+    
     this.router.navigate(['/login']);
   }
 }
