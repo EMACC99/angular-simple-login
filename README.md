@@ -1,4 +1,12 @@
 # Phising simulado
+
+## Authors / Autores:
+- Javier Navarro Espindola: javojavojavojavo[at]gmail.com
+- Eduardo Manuel Ceja Cruz: lalitoceja[at]gmail.com
+- Saul Armas Gamiño: luasikirfl[at]gmail.com
+- César Arcos González: cesar99ag[at]gmail.com
+
+
 ## Introduction / introduccion
 For this work the idea was had of using a "fictitious" brand of cosmetics, which would offer a discount to all those who are registered on a web page. When the person interested in said discount clicks on "register" they are redirected to a page which explains that everything was a test and that they should not give sensitive data to anyone as it could be a scam.
  
