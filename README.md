@@ -71,7 +71,7 @@ Ejecuta `ng test` para ejecutar los test unitarios con [Karma](https://karma-run
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 Ejecuta `ng e2e` para iniciar las pruebas "end-to-end", para poder hacerlo debes primero agregar un paquete que implemente las compatibilidades para hacer las pruebas "end-to-end"
-## Further help / mas ayuda
+## Further help / Más ayuda
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
